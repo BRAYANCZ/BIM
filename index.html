@@ -1,62 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brayan Guachetá | BIM Freelancer</title>
+  <title>Brayan Guachetá | Portafolio BIM</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/forms"></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-white shadow p-6 text-center">
-    <h1 class="text-4xl font-bold">Brayan Estiven Guachetá de la Cruz</h1>
-    <p class="mt-2 text-lg text-gray-600">Especialista en Modelación BIM | Ingeniería Civil</p>
-  </header>
-
-  <section class="p-8 max-w-4xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-4">Sobre mí</h2>
-    <p>
-      Soy estudiante de décimo semestre de Ingeniería Civil con enfoque en estructuras y construcción, especializado en modelación BIM. Manejo disciplinas como arquitectura, estructuras, MEP y gestión de modelos, además de la elaboración de planos técnicos, modelado de estructuras metálicas y armado de refuerzo. Me apasiona aplicar tecnología para optimizar procesos constructivos y visualización de proyectos.
-    </p>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-20 text-center">
+    <h1 class="text-5xl font-bold">Brayan Guachetá</h1>
+    <p class="text-xl mt-4">Especialista en Modelación BIM | Ingeniería Civil</p>
   </section>
 
-  <section class="p-8 bg-white max-w-4xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-4">Servicios</h2>
-    <ul class="list-disc list-inside space-y-2">
-      <li>Modelación BIM (Arquitectura, Estructuras, MEP)</li>
-      <li>Creación y gestión de planos técnicos</li>
-      <li>Modelado de estructuras metálicas y concreto reforzado</li>
-      <li>Visualización y animación de procesos constructivos</li>
-      <li>Compatibilización y coordinación interdisciplinar</li>
-    </ul>
+  <!-- Ventanas/Secciones -->
+  <section class="max-w-6xl mx-auto mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition duration-300">
+      <h2 class="text-xl font-bold mb-2 text-blue-700">Arquitectura y Estructuras</h2>
+      <p>Modelado detallado en Revit, estructura metálica y concreto reforzado, armado y planos de construcción.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition duration-300">
+      <h2 class="text-xl font-bold mb-2 text-green-700">Instalaciones MEP</h2>
+      <p>Modelación de sistemas hidráulicos, sanitarios y eléctricos, coordinación interdisciplinar y compatibilización BIM.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition duration-300">
+      <h2 class="text-xl font-bold mb-2 text-yellow-600">Planos y Documentación</h2>
+      <p>Creación de planos de arquitectura, estructura y detalles constructivos para obra.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition duration-300">
+      <h2 class="text-xl font-bold mb-2 text-purple-700">Gestión BIM</h2>
+      <p>Organización de modelos, fases, cuantificaciones, vistas personalizadas y trabajo colaborativo.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition duration-300">
+      <h2 class="text-xl font-bold mb-2 text-red-600">Visualización y Render</h2>
+      <p>Uso de Twinmotion y Lumion para presentación realista de proyectos en diferentes etapas.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition duration-300">
+      <h2 class="text-xl font-bold mb-2 text-indigo-600">Animación de Procesos</h2>
+      <p>Animaciones constructivas para explicar fases de obra, excavaciones, cimentaciones, montaje estructural y más.</p>
+    </div>
   </section>
 
-  <section class="p-8 max-w-4xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-4">Portafolio</h2>
-    <p class="text-gray-600">Próximamente imágenes y enlaces de mis proyectos.</p>
-  </section>
-
-  <section class="p-8 bg-white max-w-4xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-4">Contacto</h2>
-    <form class="space-y-4" action="https://formspree.io/f/tu-form-id" method="POST">
-      <div>
-        <label class="block mb-1" for="name">Nombre</label>
-        <input class="w-full border border-gray-300 p-2 rounded" type="text" id="name" name="name" required>
+  <!-- Galería de Renders -->
+  <section class="max-w-6xl mx-auto mt-20">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Galería de Renders</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Aquí puedes añadir imágenes -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/render1.jpg" alt="Render 1" class="w-full h-64 object-cover">
       </div>
-      <div>
-        <label class="block mb-1" for="email">Correo electrónico</label>
-        <input class="w-full border border-gray-300 p-2 rounded" type="email" id="email" name="email" required>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/render2.jpg" alt="Render 2" class="w-full h-64 object-cover">
       </div>
-      <div>
-        <label class="block mb-1" for="message">Mensaje</label>
-        <textarea class="w-full border border-gray-300 p-2 rounded" id="message" name="message" rows="4" required></textarea>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/render3.jpg" alt="Render 3" class="w-full h-64 object-cover">
       </div>
-      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" type="submit">Enviar</button>
-    </form>
+    </div>
   </section>
 
-  <footer class="text-center text-sm text-gray-500 py-6">
-    Página en construcción - Pronto con enlaces a redes y portafolio visual
+  <!-- Galería de Planos -->
+  <section class="max-w-6xl mx-auto mt-20 mb-16">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Ejemplos de Planos</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Aquí puedes añadir imágenes -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/plano1.jpg" alt="Plano 1" class="w-full h-64 object-cover">
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/plano2.jpg" alt="Plano 2" class="w-full h-64 object-cover">
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/plano3.jpg" alt="Plano 3" class="w-full h-64 object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500">
+    Diseñado por Brayan Guachetá | Portafolio BIM 2025
   </footer>
 </body>
 </html>
